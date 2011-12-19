@@ -2246,3 +2246,7 @@ register_vote_q: 1 item
 (<Account 7>, <Comment 6453>, True, '127.0.0.1', False, False)
 register_vote_q: 1 item 
 (<Account 4>, <Comment 6454>, True, '127.0.0.1', False, False)
+register_vote_q: 1 item 
+(<Account 8>, <Comment 6455>, True, '127.0.0.1', False, False)
+register_vote_q: 1 item 
+(<Account 8>, <Link 6096>, True, '127.0.0.1', False, False)
