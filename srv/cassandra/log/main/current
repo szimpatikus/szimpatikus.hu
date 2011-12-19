@@ -1,0 +1,542 @@
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:44:58,496 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:44:58,642 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:44:58,886 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:44:59,673 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:44:59,784 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:00,052 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:45:00,813 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:45:00,995 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:01,273 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:45:02,255 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:45:02,381 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:02,582 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:45:03,468 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:45:03,617 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:03,842 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:45:04,654 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:45:04,792 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:05,038 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:45:05,868 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:45:06,084 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:06,327 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:441)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:470)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:122)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at org.apache.cassandra.thrift.CassandraDaemon.<clinit>(CassandraDaemon.java:62)
+ INFO 13:45:07,161 JNA not found. Native methods will be disabled.
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (Permission denied)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:207)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:289)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:167)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:163)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:256)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:132)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:96)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:654)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:612)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:509)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:415)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:316)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:324)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:71)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+ INFO 13:45:07,351 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+ERROR 13:45:07,582 Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more
+Exception encountered during startup.
+java.lang.ExceptionInInitializerError
+	at org.apache.cassandra.db.SystemTable.checkHealth(SystemTable.java:124)
+	at org.apache.cassandra.thrift.CassandraDaemon.setup(CassandraDaemon.java:98)
+	at org.apache.cassandra.thrift.CassandraDaemon.main(CassandraDaemon.java:224)
+Caused by: java.lang.RuntimeException: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:68)
+	... 3 more
+Caused by: java.io.IOException: unable to mkdirs /cassandra/data/system
+	at org.apache.cassandra.io.util.FileUtils.createDirectory(FileUtils.java:70)
+	at org.apache.cassandra.config.DatabaseDescriptor.createAllDirectories(DatabaseDescriptor.java:860)
+	at org.apache.cassandra.db.Table.<clinit>(Table.java:64)
+	... 3 more

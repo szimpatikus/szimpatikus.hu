@@ -1,0 +1,825 @@
+  HTTP_FROM: 'googlebot(at)googlebot.com'
+  HTTP_HOST: 'szimpatikus.hu'
+  HTTP_IF_MODIFIED_SINCE: 'Wed, 23 Nov 2011 12:31:55 GMT'
+  HTTP_USER_AGENT: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+  HTTP_X_FORWARDED_FOR: '66.249.66.78'
+  HTTP_X_FORWARDED_PROTO: 'http'
+  HTTP_X_HOST: 'szimpatikus.hu'
+  PATH_INFO: '/comscore-iframe/szimpatikus.hu/r/offline/comments/4bn/media_konferencia_2011_november_1718/'
+  QUERY_STRING: 'sort=hot'
+  REMOTE_ADDR: '127.0.0.1'
+  REQUEST_METHOD: 'GET'
+  SERVER_NAME: '0.0.0.0'
+  SERVER_PORT: '8001'
+  SERVER_PROTOCOL: 'HTTP/1.0'
+
+
+WSGI Variables
+--------------
+  application: <r2.config.middleware.DomainMiddleware object at 0x3484190>
+  beaker.cache: <beaker.cache.CacheManager object at 0x347a5d0>
+  beaker.get_session: <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x347a0d0>>
+  beaker.session: {'_accessed_time': 1324317792.0563331, '_creation_time': 1324317792.0563331}
+  content_type: 'text/html; charset=UTF-8'
+  paste.httpserver.thread_pool: <paste.httpserver.ThreadPool object at 0x3484490>
+  paste.parsed_querystring: ([('sort', 'hot')], 'sort=hot')
+  paste.recursive.forward: <paste.recursive.Forwarder from />
+  paste.recursive.include: <paste.recursive.Includer from />
+  paste.recursive.include_app_iter: <paste.recursive.IncluderAppIter from />
+  paste.recursive.script_name: ''
+  paste.registry: <paste.registry.Registry object at 0x3496d90>
+  paste.throw_errors: True
+  pylons.environ_config: {'cache': 'beaker.cache', 'session': 'beaker.session'}
+  pylons.error_call: True
+  pylons.routes_dict: {'url': u'szimpatikus.hu/r/offline/comments/4bn/media_konferencia_2011_november_1718', 'action': u'comscore', 'controller': u'mediaembed'}
+  render_style: 'html'
+  routes.route: <routes.base.Route object at 0x306f8d0>
+  wsgi process: 'Multithreaded'
+  wsgiorg.routing_args: ((), {'url': u'szimpatikus.hu/r/offline/comments/4bn/media_konferencia_2011_november_1718', 'action': u'comscore', 'controller': u'mediaembed'})
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 1068, in process_request_in_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.6/SocketServer.py", line 322, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.6/SocketServer.py", line 617, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 442, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.6/BaseHTTPServer.py", line 329, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 437, in handle_one_request
+    self.wsgi_execute()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 287, in wsgi_execute
+    self.wsgi_start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 430, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/gzipper.py", line 38, in __call__
+    response.gzip_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/cascade.py", line 130, in __call__
+    return self.apps[-1](environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/registry.py", line 379, in __call__
+    app_iter = self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 88, in __call__
+    return middleware(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 51, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 86, in __call__
+    return self.app(environ, keep_status_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 84, in __call__
+    return self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 196, in __call__
+    app_iter = self.application(environ, change_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py", line 138, in __call__
+    return self.application(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 334, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 403, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 351, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 366, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 476, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 499, in __call__
+    return self.app(environ, custom_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 314, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 73, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 152, in __call__
+    return self.wrap_app(environ, session_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py", line 99, in __call__
+    response = self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 94, in __call__
+    controller = self.resolve(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 170, in resolve
+    return self.find_controller(controller)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 510, in find_controller
+    __import__(self.package_name + '.controllers')
+  File "/home/szimpatikus/reddit/r2/r2/controllers/__init__.py", line 22, in <module>
+    from listingcontroller import ListingController
+  File "/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py", line 22, in <module>
+    from reddit_base import RedditController, base_listing, organic_pos
+  File "/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py", line 27, in <module>
+    from r2.lib.base import BaseController, proxyurl
+  File "/home/szimpatikus/reddit/r2/r2/lib/base.py", line 29, in <module>
+    from r2.lib.template_helpers import get_domain
+  File "/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py", line 22, in <module>
+    from r2.models import *
+  File "/home/szimpatikus/reddit/r2/r2/models/__init__.py", line 22, in <module>
+    from account import *
+  File "/home/szimpatikus/reddit/r2/r2/models/account.py", line 382
+     <<<<<<< HEAD
+      ^
+ SyntaxError: invalid syntax
+Error - <type 'exceptions.SyntaxError'>: invalid syntax (account.py, line 382)
+URL: http://szimpatikus.hu/comments/4pe/google_a_few_big_improvements_before_the_new_year/
+File '/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py', line 144 in __call__
+  app_iter = self.application(environ, sr_checker)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 334 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 403 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 351 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 366 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 476 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 499 in __call__
+  return self.app(environ, custom_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 314 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 73 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 152 in __call__
+  return self.wrap_app(environ, session_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py', line 99 in __call__
+  response = self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 94 in __call__
+  controller = self.resolve(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 170 in resolve
+  return self.find_controller(controller)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 510 in find_controller
+  __import__(self.package_name + '.controllers')
+File '/home/szimpatikus/reddit/r2/r2/controllers/__init__.py', line 22 in <module>
+  from listingcontroller import ListingController
+File '/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py', line 22 in <module>
+  from reddit_base import RedditController, base_listing, organic_pos
+File '/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py', line 27 in <module>
+  from r2.lib.base import BaseController, proxyurl
+File '/home/szimpatikus/reddit/r2/r2/lib/base.py', line 29 in <module>
+  from r2.lib.template_helpers import get_domain
+File '/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py', line 22 in <module>
+  from r2.models import *
+File '/home/szimpatikus/reddit/r2/r2/models/__init__.py', line 22 in <module>
+  from account import *
+SyntaxError: invalid syntax (account.py, line 382)
+
+
+CGI Variables
+-------------
+  CONTENT_LENGTH: '0'
+  FULLPATH: '/r/tech/comments/4pe/google_a_few_big_improvements_before_the_new_year/'
+  HTTP_HOST: 'szimpatikus.hu'
+  HTTP_X_FORWARDED_FOR: '77.111.88.216'
+  HTTP_X_FORWARDED_PROTO: 'http'
+  HTTP_X_HOST: 'szimpatikus.hu'
+  PATH_INFO: '/comments/4pe/google_a_few_big_improvements_before_the_new_year/'
+  REMOTE_ADDR: '127.0.0.1'
+  REQUEST_METHOD: 'GET'
+  SERVER_NAME: '0.0.0.0'
+  SERVER_PORT: '8001'
+  SERVER_PROTOCOL: 'HTTP/1.0'
+
+
+WSGI Variables
+--------------
+  application: <r2.config.middleware.DomainMiddleware object at 0x3484190>
+  beaker.cache: <beaker.cache.CacheManager object at 0x347a5d0>
+  beaker.get_session: <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x347a0d0>>
+  beaker.session: {'_accessed_time': 1324317813.691076, '_creation_time': 1324317813.691076}
+  content_type: 'text/html; charset=UTF-8'
+  paste.httpserver.thread_pool: <paste.httpserver.ThreadPool object at 0x3484490>
+  paste.recursive.forward: <paste.recursive.Forwarder from />
+  paste.recursive.include: <paste.recursive.Includer from />
+  paste.recursive.include_app_iter: <paste.recursive.IncluderAppIter from />
+  paste.recursive.script_name: ''
+  paste.registry: <paste.registry.Registry object at 0x369f1d0>
+  paste.throw_errors: True
+  pylons.environ_config: {'cache': 'beaker.cache', 'session': 'beaker.session'}
+  pylons.error_call: True
+  pylons.routes_dict: {'comment': None, 'article': u'4pe', 'controller': u'front', 'action': u'comments', 'title': u'google_a_few_big_improvements_before_the_new_year'}
+  render_style: 'html'
+  routes.route: <routes.base.Route object at 0x305f750>
+  subreddit: 'tech'
+  wsgi process: 'Multithreaded'
+  wsgiorg.routing_args: ((), {'comment': None, 'article': u'4pe', 'controller': u'front', 'action': u'comments', 'title': u'google_a_few_big_improvements_before_the_new_year'})
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 1068, in process_request_in_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.6/SocketServer.py", line 322, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.6/SocketServer.py", line 617, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 442, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.6/BaseHTTPServer.py", line 329, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 437, in handle_one_request
+    self.wsgi_execute()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 287, in wsgi_execute
+    self.wsgi_start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 430, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/gzipper.py", line 35, in __call__
+    return self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/cascade.py", line 130, in __call__
+    return self.apps[-1](environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/registry.py", line 379, in __call__
+    app_iter = self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 88, in __call__
+    return middleware(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 51, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 86, in __call__
+    return self.app(environ, keep_status_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 84, in __call__
+    return self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 196, in __call__
+    app_iter = self.application(environ, change_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py", line 138, in __call__
+    return self.application(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 334, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 403, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 351, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 366, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 476, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 499, in __call__
+    return self.app(environ, custom_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 314, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 73, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 152, in __call__
+    return self.wrap_app(environ, session_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py", line 99, in __call__
+    response = self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 94, in __call__
+    controller = self.resolve(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 170, in resolve
+    return self.find_controller(controller)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 510, in find_controller
+    __import__(self.package_name + '.controllers')
+  File "/home/szimpatikus/reddit/r2/r2/controllers/__init__.py", line 22, in <module>
+    from listingcontroller import ListingController
+  File "/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py", line 22, in <module>
+    from reddit_base import RedditController, base_listing, organic_pos
+  File "/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py", line 27, in <module>
+    from r2.lib.base import BaseController, proxyurl
+  File "/home/szimpatikus/reddit/r2/r2/lib/base.py", line 29, in <module>
+    from r2.lib.template_helpers import get_domain
+  File "/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py", line 22, in <module>
+    from r2.models import *
+  File "/home/szimpatikus/reddit/r2/r2/models/__init__.py", line 22, in <module>
+    from account import *
+  File "/home/szimpatikus/reddit/r2/r2/models/account.py", line 382
+     <<<<<<< HEAD
+      ^
+ SyntaxError: invalid syntax
+Error - <type 'exceptions.SyntaxError'>: invalid syntax (account.py, line 382)
+URL: http://szimpatikus.hu/
+File '/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py', line 144 in __call__
+  app_iter = self.application(environ, sr_checker)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 334 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 403 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 351 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 366 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 476 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 499 in __call__
+  return self.app(environ, custom_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 314 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 73 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 152 in __call__
+  return self.wrap_app(environ, session_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py', line 99 in __call__
+  response = self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 94 in __call__
+  controller = self.resolve(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 170 in resolve
+  return self.find_controller(controller)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 510 in find_controller
+  __import__(self.package_name + '.controllers')
+File '/home/szimpatikus/reddit/r2/r2/controllers/__init__.py', line 22 in <module>
+  from listingcontroller import ListingController
+File '/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py', line 22 in <module>
+  from reddit_base import RedditController, base_listing, organic_pos
+File '/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py', line 27 in <module>
+  from r2.lib.base import BaseController, proxyurl
+File '/home/szimpatikus/reddit/r2/r2/lib/base.py', line 29 in <module>
+  from r2.lib.template_helpers import get_domain
+File '/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py', line 22 in <module>
+  from r2.models import *
+File '/home/szimpatikus/reddit/r2/r2/models/__init__.py', line 22 in <module>
+  from account import *
+SyntaxError: invalid syntax (account.py, line 382)
+
+
+CGI Variables
+-------------
+  CONTENT_LENGTH: '0'
+  FULLPATH: '/'
+  HTTP_ACCEPT: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+  HTTP_ACCEPT_CHARSET: 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+  HTTP_ACCEPT_ENCODING: 'gzip, deflate'
+  HTTP_ACCEPT_LANGUAGE: 'en-us,en;q=0.5'
+  HTTP_COOKIE: 'reddit_first=%7B%22organic_pos%22%3A%201%2C%20%22firsttime%22%3A%20%22first%22%7D; __utma=16075252.983839958.1311005558.1324312501.1324316517.400; __utmz=16075252.1319659507.261.187.utmcsr=szeleitamas.com|utmccn=(referral)|utmcmd=referral|utmcct=/teszt.php; reddit_session=7%2C2011-11-29T21%3A42%3A19%2C0191bfcc86ebef6f23eae93fb28a2d6c0842502b; sztomi_recentclicks2=t5_4p0%2Ct5_4p8%2Ct5_4p3%2Ct5_4p4%2Ct5_4o0%2Ct5_4oe%2Ct5_4oy%2Ct5_4p6%2Ct5_4p9%2Ct5_4p4%2Ct5_4pa%2Ct5_4p4%2C; sztomi_last_thing=%7B%22href%22%3A%20%22http%3A//szimpatikus.hu/%22%2C%20%22what%22%3A%20%22t5_4p0%22%2C%20%22organic%22%3A%20false%7D; __utmc=16075252; sztomi_reddit_counts=; __utmb=16075252.3.10.1324316517'
+  HTTP_HOST: 'szimpatikus.hu'
+  HTTP_USER_AGENT: 'Mozilla/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko/20100101 Firefox/8.0'
+  HTTP_X_FORWARDED_FOR: '80.99.181.195'
+  HTTP_X_FORWARDED_PROTO: 'http'
+  HTTP_X_HOST: 'szimpatikus.hu'
+  PATH_INFO: '/'
+  REMOTE_ADDR: '127.0.0.1'
+  REQUEST_METHOD: 'GET'
+  SERVER_NAME: '0.0.0.0'
+  SERVER_PORT: '8001'
+  SERVER_PROTOCOL: 'HTTP/1.0'
+
+
+WSGI Variables
+--------------
+  application: <r2.config.middleware.DomainMiddleware object at 0x3484190>
+  beaker.cache: <beaker.cache.CacheManager object at 0x347a5d0>
+  beaker.get_session: <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x347a0d0>>
+  beaker.session: {'_accessed_time': 1324317878.7968781, '_creation_time': 1324317878.7968781}
+  content_type: 'text/html; charset=UTF-8'
+  paste.httpserver.thread_pool: <paste.httpserver.ThreadPool object at 0x3484490>
+  paste.recursive.forward: <paste.recursive.Forwarder from />
+  paste.recursive.include: <paste.recursive.Includer from />
+  paste.recursive.include_app_iter: <paste.recursive.IncluderAppIter from />
+  paste.recursive.script_name: ''
+  paste.registry: <paste.registry.Registry object at 0x36094d0>
+  paste.throw_errors: True
+  pylons.environ_config: {'cache': 'beaker.cache', 'session': 'beaker.session'}
+  pylons.error_call: True
+  pylons.routes_dict: {'action': u'listing', 'controller': u'hot'}
+  render_style: 'html'
+  routes.route: <routes.base.Route object at 0x305fb90>
+  wsgi process: 'Multithreaded'
+  wsgiorg.routing_args: ((), {'action': u'listing', 'controller': u'hot'})
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 1068, in process_request_in_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.6/SocketServer.py", line 322, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.6/SocketServer.py", line 617, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 442, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.6/BaseHTTPServer.py", line 329, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 437, in handle_one_request
+    self.wsgi_execute()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 287, in wsgi_execute
+    self.wsgi_start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 430, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/gzipper.py", line 38, in __call__
+    response.gzip_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/cascade.py", line 130, in __call__
+    return self.apps[-1](environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/registry.py", line 379, in __call__
+    app_iter = self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 88, in __call__
+    return middleware(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 51, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 86, in __call__
+    return self.app(environ, keep_status_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 84, in __call__
+    return self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 196, in __call__
+    app_iter = self.application(environ, change_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py", line 138, in __call__
+    return self.application(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 334, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 403, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 351, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 366, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 476, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 499, in __call__
+    return self.app(environ, custom_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 314, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 73, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 152, in __call__
+    return self.wrap_app(environ, session_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py", line 99, in __call__
+    response = self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 94, in __call__
+    controller = self.resolve(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 170, in resolve
+    return self.find_controller(controller)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 510, in find_controller
+    __import__(self.package_name + '.controllers')
+  File "/home/szimpatikus/reddit/r2/r2/controllers/__init__.py", line 22, in <module>
+    from listingcontroller import ListingController
+  File "/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py", line 22, in <module>
+    from reddit_base import RedditController, base_listing, organic_pos
+  File "/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py", line 27, in <module>
+    from r2.lib.base import BaseController, proxyurl
+  File "/home/szimpatikus/reddit/r2/r2/lib/base.py", line 29, in <module>
+    from r2.lib.template_helpers import get_domain
+  File "/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py", line 22, in <module>
+    from r2.models import *
+  File "/home/szimpatikus/reddit/r2/r2/models/__init__.py", line 22, in <module>
+    from account import *
+  File "/home/szimpatikus/reddit/r2/r2/models/account.py", line 382
+     <<<<<<< HEAD
+      ^
+ SyntaxError: invalid syntax
+Error - <type 'exceptions.SyntaxError'>: invalid syntax (account.py, line 382)
+URL: http://szimpatikus.hu/comments/4pe/google_a_few_big_improvements_before_the_new_year/
+File '/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py', line 144 in __call__
+  app_iter = self.application(environ, sr_checker)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 334 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 403 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 351 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 366 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 476 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 499 in __call__
+  return self.app(environ, custom_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 314 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 73 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 152 in __call__
+  return self.wrap_app(environ, session_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py', line 99 in __call__
+  response = self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 94 in __call__
+  controller = self.resolve(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 170 in resolve
+  return self.find_controller(controller)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 510 in find_controller
+  __import__(self.package_name + '.controllers')
+File '/home/szimpatikus/reddit/r2/r2/controllers/__init__.py', line 22 in <module>
+  from listingcontroller import ListingController
+File '/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py', line 22 in <module>
+  from reddit_base import RedditController, base_listing, organic_pos
+File '/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py', line 27 in <module>
+  from r2.lib.base import BaseController, proxyurl
+File '/home/szimpatikus/reddit/r2/r2/lib/base.py', line 29 in <module>
+  from r2.lib.template_helpers import get_domain
+File '/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py', line 22 in <module>
+  from r2.models import *
+File '/home/szimpatikus/reddit/r2/r2/models/__init__.py', line 22 in <module>
+  from account import *
+SyntaxError: invalid syntax (account.py, line 382)
+
+
+CGI Variables
+-------------
+  CONTENT_LENGTH: '0'
+  FULLPATH: '/r/tech/comments/4pe/google_a_few_big_improvements_before_the_new_year/'
+  HTTP_ACCEPT_ENCODING: 'gzip;q=1.0, deflate;q=0.8, chunked;q=0.6, identity;q=0.4, *;q=0'
+  HTTP_HOST: 'szimpatikus.hu'
+  HTTP_REFERER: 'http://feeds.feedburner.com/szimpatikus'
+  HTTP_USER_AGENT: 'magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)'
+  HTTP_X_FORWARDED_FOR: '94.228.34.210'
+  HTTP_X_FORWARDED_PROTO: 'http'
+  HTTP_X_HOST: 'szimpatikus.hu'
+  PATH_INFO: '/comments/4pe/google_a_few_big_improvements_before_the_new_year/'
+  REMOTE_ADDR: '127.0.0.1'
+  REQUEST_METHOD: 'GET'
+  SERVER_NAME: '0.0.0.0'
+  SERVER_PORT: '8001'
+  SERVER_PROTOCOL: 'HTTP/1.0'
+
+
+WSGI Variables
+--------------
+  application: <r2.config.middleware.DomainMiddleware object at 0x3484190>
+  beaker.cache: <beaker.cache.CacheManager object at 0x347a5d0>
+  beaker.get_session: <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x347a0d0>>
+  beaker.session: {'_accessed_time': 1324317879.8675449, '_creation_time': 1324317879.8675449}
+  content_type: 'text/html; charset=UTF-8'
+  paste.httpserver.thread_pool: <paste.httpserver.ThreadPool object at 0x3484490>
+  paste.recursive.forward: <paste.recursive.Forwarder from />
+  paste.recursive.include: <paste.recursive.Includer from />
+  paste.recursive.include_app_iter: <paste.recursive.IncluderAppIter from />
+  paste.recursive.script_name: ''
+  paste.registry: <paste.registry.Registry object at 0x3613850>
+  paste.throw_errors: True
+  pylons.environ_config: {'cache': 'beaker.cache', 'session': 'beaker.session'}
+  pylons.error_call: True
+  pylons.routes_dict: {'comment': None, 'article': u'4pe', 'controller': u'front', 'action': u'comments', 'title': u'google_a_few_big_improvements_before_the_new_year'}
+  render_style: 'html'
+  routes.route: <routes.base.Route object at 0x305f750>
+  subreddit: 'tech'
+  wsgi process: 'Multithreaded'
+  wsgiorg.routing_args: ((), {'comment': None, 'article': u'4pe', 'controller': u'front', 'action': u'comments', 'title': u'google_a_few_big_improvements_before_the_new_year'})
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 1068, in process_request_in_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.6/SocketServer.py", line 322, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.6/SocketServer.py", line 617, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 442, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.6/BaseHTTPServer.py", line 329, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 437, in handle_one_request
+    self.wsgi_execute()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 287, in wsgi_execute
+    self.wsgi_start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 430, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/gzipper.py", line 38, in __call__
+    response.gzip_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/cascade.py", line 130, in __call__
+    return self.apps[-1](environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/registry.py", line 379, in __call__
+    app_iter = self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 88, in __call__
+    return middleware(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 51, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 86, in __call__
+    return self.app(environ, keep_status_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 84, in __call__
+    return self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 196, in __call__
+    app_iter = self.application(environ, change_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py", line 138, in __call__
+    return self.application(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 334, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 403, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 351, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 366, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 476, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 499, in __call__
+    return self.app(environ, custom_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 314, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 73, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 152, in __call__
+    return self.wrap_app(environ, session_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py", line 99, in __call__
+    response = self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 94, in __call__
+    controller = self.resolve(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 170, in resolve
+    return self.find_controller(controller)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 510, in find_controller
+    __import__(self.package_name + '.controllers')
+  File "/home/szimpatikus/reddit/r2/r2/controllers/__init__.py", line 22, in <module>
+    from listingcontroller import ListingController
+  File "/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py", line 22, in <module>
+    from reddit_base import RedditController, base_listing, organic_pos
+  File "/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py", line 27, in <module>
+    from r2.lib.base import BaseController, proxyurl
+  File "/home/szimpatikus/reddit/r2/r2/lib/base.py", line 29, in <module>
+    from r2.lib.template_helpers import get_domain
+  File "/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py", line 22, in <module>
+    from r2.models import *
+  File "/home/szimpatikus/reddit/r2/r2/models/__init__.py", line 22, in <module>
+    from account import *
+  File "/home/szimpatikus/reddit/r2/r2/models/account.py", line 382
+     <<<<<<< HEAD
+      ^
+ SyntaxError: invalid syntax
+Error - <type 'exceptions.SyntaxError'>: invalid syntax (account.py, line 382)
+URL: http://szimpatikus.hu/comments/4pd/a_j%C3%B3_marketing_sok_mindent_feledtet_d/
+File '/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py', line 144 in __call__
+  app_iter = self.application(environ, sr_checker)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 334 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 403 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 351 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 366 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 106 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 476 in __call__
+  return self.app(environ, start_response)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 499 in __call__
+  return self.app(environ, custom_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 314 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 73 in __call__
+  return self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py', line 152 in __call__
+  return self.wrap_app(environ, session_start_response)
+File '/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py', line 99 in __call__
+  response = self.app(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 94 in __call__
+  controller = self.resolve(environ, start_response)
+File '/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py', line 170 in resolve
+  return self.find_controller(controller)
+File '/home/szimpatikus/reddit/r2/r2/config/middleware.py', line 510 in find_controller
+  __import__(self.package_name + '.controllers')
+File '/home/szimpatikus/reddit/r2/r2/controllers/__init__.py', line 22 in <module>
+  from listingcontroller import ListingController
+File '/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py', line 22 in <module>
+  from reddit_base import RedditController, base_listing, organic_pos
+File '/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py', line 27 in <module>
+  from r2.lib.base import BaseController, proxyurl
+File '/home/szimpatikus/reddit/r2/r2/lib/base.py', line 29 in <module>
+  from r2.lib.template_helpers import get_domain
+File '/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py', line 22 in <module>
+  from r2.models import *
+File '/home/szimpatikus/reddit/r2/r2/models/__init__.py', line 22 in <module>
+  from account import *
+SyntaxError: invalid syntax (account.py, line 382)
+
+
+CGI Variables
+-------------
+  CONTENT_LENGTH: '0'
+  FULLPATH: '/r/marketing/comments/4pd/a_j\xc3\xb3_marketing_sok_mindent_feledtet_d/'
+  HTTP_ACCEPT_ENCODING: 'gzip;q=1.0, deflate;q=0.8, chunked;q=0.6, identity;q=0.4, *;q=0'
+  HTTP_HOST: 'szimpatikus.hu'
+  HTTP_REFERER: 'http://feeds.feedburner.com/szimpatikus'
+  HTTP_USER_AGENT: 'magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)'
+  HTTP_X_FORWARDED_FOR: '94.228.34.210'
+  HTTP_X_FORWARDED_PROTO: 'http'
+  HTTP_X_HOST: 'szimpatikus.hu'
+  PATH_INFO: '/comments/4pd/a_j\xc3\xb3_marketing_sok_mindent_feledtet_d/'
+  REMOTE_ADDR: '127.0.0.1'
+  REQUEST_METHOD: 'GET'
+  SERVER_NAME: '0.0.0.0'
+  SERVER_PORT: '8001'
+  SERVER_PROTOCOL: 'HTTP/1.0'
+
+
+WSGI Variables
+--------------
+  application: <r2.config.middleware.DomainMiddleware object at 0x3484190>
+  beaker.cache: <beaker.cache.CacheManager object at 0x347a5d0>
+  beaker.get_session: <bound method SessionMiddleware._get_session of <beaker.middleware.SessionMiddleware object at 0x347a0d0>>
+  beaker.session: {'_accessed_time': 1324317889.9073319, '_creation_time': 1324317889.9073319}
+  content_type: 'text/html; charset=UTF-8'
+  paste.httpserver.thread_pool: <paste.httpserver.ThreadPool object at 0x3484490>
+  paste.recursive.forward: <paste.recursive.Forwarder from />
+  paste.recursive.include: <paste.recursive.Includer from />
+  paste.recursive.include_app_iter: <paste.recursive.IncluderAppIter from />
+  paste.recursive.script_name: ''
+  paste.registry: <paste.registry.Registry object at 0x361c550>
+  paste.throw_errors: True
+  pylons.environ_config: {'cache': 'beaker.cache', 'session': 'beaker.session'}
+  pylons.error_call: True
+  pylons.routes_dict: {'comment': None, 'article': u'4pd', 'controller': u'front', 'action': u'comments', 'title': u'a_j\xf3_marketing_sok_mindent_feledtet_d'}
+  render_style: 'html'
+  routes.route: <routes.base.Route object at 0x305f750>
+  subreddit: 'marketing'
+  wsgi process: 'Multithreaded'
+  wsgiorg.routing_args: ((), {'comment': None, 'article': u'4pd', 'controller': u'front', 'action': u'comments', 'title': u'a_j\xf3_marketing_sok_mindent_feledtet_d'})
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 1068, in process_request_in_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.6/SocketServer.py", line 322, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.6/SocketServer.py", line 617, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 442, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.6/BaseHTTPServer.py", line 329, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 437, in handle_one_request
+    self.wsgi_execute()
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/httpserver.py", line 287, in wsgi_execute
+    self.wsgi_start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 430, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/gzipper.py", line 38, in __call__
+    response.gzip_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/cascade.py", line 130, in __call__
+    return self.apps[-1](environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/registry.py", line 379, in __call__
+    app_iter = self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 88, in __call__
+    return middleware(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 51, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 86, in __call__
+    return self.app(environ, keep_status_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/recursive.py", line 84, in __call__
+    return self.application(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/errordocument.py", line 196, in __call__
+    app_iter = self.application(environ, change_response)
+  File "/usr/local/lib/python2.6/dist-packages/Paste-1.7.5.1-py2.6.egg/paste/exceptions/errormiddleware.py", line 138, in __call__
+    return self.application(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 334, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 403, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 351, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 366, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 106, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 476, in __call__
+    return self.app(environ, start_response)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 499, in __call__
+    return self.app(environ, custom_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 314, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 73, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Beaker-1.5.4-py2.6.egg/beaker/middleware.py", line 152, in __call__
+    return self.wrap_app(environ, session_start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Routes-1.8-py2.6.egg/routes/middleware.py", line 99, in __call__
+    response = self.app(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 94, in __call__
+    controller = self.resolve(environ, start_response)
+  File "/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/wsgiapp.py", line 170, in resolve
+    return self.find_controller(controller)
+  File "/home/szimpatikus/reddit/r2/r2/config/middleware.py", line 510, in find_controller
+    __import__(self.package_name + '.controllers')
+  File "/home/szimpatikus/reddit/r2/r2/controllers/__init__.py", line 22, in <module>
+    from listingcontroller import ListingController
+  File "/home/szimpatikus/reddit/r2/r2/controllers/listingcontroller.py", line 22, in <module>
+    from reddit_base import RedditController, base_listing, organic_pos
+  File "/home/szimpatikus/reddit/r2/r2/controllers/reddit_base.py", line 27, in <module>
+    from r2.lib.base import BaseController, proxyurl
+  File "/home/szimpatikus/reddit/r2/r2/lib/base.py", line 29, in <module>
+    from r2.lib.template_helpers import get_domain
+  File "/home/szimpatikus/reddit/r2/r2/lib/template_helpers.py", line 22, in <module>
+    from r2.models import *
+  File "/home/szimpatikus/reddit/r2/r2/models/__init__.py", line 22, in <module>
+    from account import *
+  File "/home/szimpatikus/reddit/r2/r2/models/account.py", line 382
+     <<<<<<< HEAD
+      ^
+ SyntaxError: invalid syntax

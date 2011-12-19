@@ -61,6 +61,14 @@
   <br/>
 </%def>
 
+<%def name="notifier_radio(val, label)">
+  <input id="notifier_${val}" class="nomargin" 
+         type="radio"  value="${val}" name="notifier"
+         ${"checked='checked'" if c.user.pref_notifier == val else ''} /> 
+  <label for="notifier_${val}">${label}</label>
+  <br/>
+</%def>
+
 <%def name="num_input(s, name)">
   <input type="text" size="4" maxlength="4" 
          name="${name}" style="margin:  0 .5em 0 .5em"
@@ -241,6 +249,32 @@
     </td>
   </tr>
   %endif
+
+  <tr>
+    <th>${_("notify options")}</th>
+    <td class="prefright">
+      ${checkbox(_("I want to be notified when someone comments on my comment."), "comment_notification")}
+    <br />
+      ${checkbox(_("I want to be notified when someone comments on a link I submitted."), "post_notification")}
+    </td>
+  </tr>
+    
+  <tr>
+    <th>${_("notifications")}</th>
+    <td class="prefright">
+      %if not c.user.pref_compress:
+      ${notifier_radio("naponta", _("daily"))}
+      ${notifier_radio("hetente", _("weekly"))}
+      ${notifier_radio("havonta", _("monthly"))}
+      ${notifier_radio("nem_kerek", _("none"))}
+      
+      %else:
+      <p class="error">${_("to enable thumbnails, disable compressed link display")}</p>
+      <input type="hidden" name="notifier" value="${c.user.pref_notifier}"/>
+      %endif
+    </td>
+  </tr>
+
   <tr>
     <td>
       <input type="submit" class="btn" value="${_('save options')}"/>

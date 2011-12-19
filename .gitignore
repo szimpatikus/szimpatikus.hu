@@ -31,3 +31,4 @@ r2/myproduction.ini
 .DS_Store
 r2/r2.egg-info/**
 r2/r2/public/static/sprite.png
+*.old

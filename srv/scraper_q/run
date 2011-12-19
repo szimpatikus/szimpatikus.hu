@@ -5,7 +5,14 @@
 # media).
 
 
+<<<<<<< HEAD
 export HOME=/home/reddit
 cd $HOME/reddit/r2
 exec 2>&1
 exec setuidgid reddit /usr/local/bin/paster run run.ini r2/lib/media.py -c "run()"
+=======
+export HOME=/home/szimpatikus
+cd $HOME/reddit/r2
+exec 2>&1
+exec setuidgid szimpatikus /usr/local/bin/paster run run.ini r2/lib/media.py -c "run()"
+>>>>>>> d83771a

@@ -1,0 +1,574 @@
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/home/szimpatikus/reddit/r2/r2/commands.py", line 63, in command
+    load_environment(conf.global_conf, conf.local_conf)
+  File "/home/szimpatikus/reddit/r2/r2/config/environment.py", line 54, in load_environment
+    config['pylons.g'] = app_globals.Globals(global_conf, app_conf, paths)
+  File "/home/szimpatikus/reddit/r2/r2/lib/app_globals.py", line 181, in __init__
+    HardCache(self)),
+  File "/home/szimpatikus/reddit/r2/r2/lib/cache.py", line 263, in __init__
+    self.backend = HardCacheBackend(gc)
+  File "/home/szimpatikus/reddit/r2/r2/lib/hardcachebackend.py", line 52, in __init__
+    self.tdb.create_table(self.table, [ indstr ])
+  File "/home/szimpatikus/reddit/r2/r2/lib/db/tdb_lite.py", line 47, in create_table
+    if not t.bind.has_table(t.name):
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/base.py", line 1271, in has_table
+    return self.run_callable(lambda c: self.dialect.has_table(c, table_name, schema=schema))
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/base.py", line 1191, in run_callable
+    conn = self.contextual_connect()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/threadlocal.py", line 194, in contextual_connect
+    return self.session.get_connection(**kwargs)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/threadlocal.py", line 20, in get_connection
+    return self.engine.TLConnection(self, self.engine.pool.connect(), close_with_result=close_with_result)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 151, in connect
+    agent = _ConnectionFairy(self)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 304, in __init__
+    rec = self._connection_record = pool.get()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 161, in get
+    return self.do_get()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 639, in do_get
+    con = self.create_connection()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 122, in create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 198, in __init__
+    self.connection = self.__connect()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 261, in __connect
+    connection = self.__pool._creator()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/strategies.py", line 80, in connect
+    raise exc.DBAPIError.instance(None, None, e)
+sqlalchemy.exc.OperationalError: (OperationalError) could not connect to server: Connection refused
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5432?
+ None None
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+Traceback (most recent call last):
+  File "/usr/local/bin/paster", line 9, in <module>
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/usr/local/lib/python2.6/dist-packages/PasteScript-1.7.3-py2.6.egg/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/home/szimpatikus/reddit/r2/r2/commands.py", line 63, in command
+    load_environment(conf.global_conf, conf.local_conf)
+  File "/home/szimpatikus/reddit/r2/r2/config/environment.py", line 54, in load_environment
+    config['pylons.g'] = app_globals.Globals(global_conf, app_conf, paths)
+  File "/home/szimpatikus/reddit/r2/r2/lib/app_globals.py", line 181, in __init__
+    HardCache(self)),
+  File "/home/szimpatikus/reddit/r2/r2/lib/cache.py", line 263, in __init__
+    self.backend = HardCacheBackend(gc)
+  File "/home/szimpatikus/reddit/r2/r2/lib/hardcachebackend.py", line 52, in __init__
+    self.tdb.create_table(self.table, [ indstr ])
+  File "/home/szimpatikus/reddit/r2/r2/lib/db/tdb_lite.py", line 47, in create_table
+    if not t.bind.has_table(t.name):
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/base.py", line 1271, in has_table
+    return self.run_callable(lambda c: self.dialect.has_table(c, table_name, schema=schema))
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/base.py", line 1191, in run_callable
+    conn = self.contextual_connect()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/threadlocal.py", line 194, in contextual_connect
+    return self.session.get_connection(**kwargs)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/threadlocal.py", line 20, in get_connection
+    return self.engine.TLConnection(self, self.engine.pool.connect(), close_with_result=close_with_result)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 151, in connect
+    agent = _ConnectionFairy(self)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 304, in __init__
+    rec = self._connection_record = pool.get()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 161, in get
+    return self.do_get()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 639, in do_get
+    con = self.create_connection()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 122, in create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 198, in __init__
+    self.connection = self.__connect()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/pool.py", line 261, in __connect
+    connection = self.__pool._creator()
+  File "/usr/local/lib/python2.6/dist-packages/SQLAlchemy-0.5.3-py2.6.egg/sqlalchemy/engine/strategies.py", line 80, in connect
+    raise exc.DBAPIError.instance(None, None, e)
+sqlalchemy.exc.OperationalError: (OperationalError) could not connect to server: Connection refused
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5432?
+ None None
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+reddit app a.v01.lanten.hu:791 started d251ba7 at 2010-12-28 08:02:24.220491
+Warning: g.media_domain == g.domain. This may give untrusted content access to user cookies
+error connecting to amqp reddit @ localhost:5672
+error connecting to amqp reddit @ localhost:5672
+error connecting to amqp reddit @ localhost:5672
+error connecting to amqp reddit @ localhost:5672
+error connecting to amqp reddit @ localhost:5672
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+reddit app a.v01.lanten.hu:5327 started d251ba7 at 2010-12-29 16:02:22.223462
+Warning: g.media_domain == g.domain. This may give untrusted content access to user cookies
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+reddit app a.v01.lanten.hu:12994 started d251ba7 at 2011-01-04 08:27:48.871994
+Warning: g.media_domain == g.domain. This may give untrusted content access to user cookies
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+reddit app a.v01.lanten.hu:20003 started d251ba7 at 2011-01-16 14:18:30.228207
+Warning: g.media_domain == g.domain. This may give untrusted content access to user cookies
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+reddit app a.v01.lanten.hu:27682 started d251ba7 at 2011-01-20 09:41:03.580113
+Warning: g.media_domain == g.domain. This may give untrusted content access to user cookies
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+/usr/local/lib/python2.6/dist-packages/Pylons-0.9.6.2-py2.6.egg/pylons/middleware.py:11: DeprecationWarning: The webhelpers.rails package is deprecated.
+- Please begin migrating to the new helpers in webhelpers.html,
+  webhelpers.text, webhelpers.number, etc.  
+- Import url_for() directly from routes, and redirect_to() from
+  pylons.controllers.util (if using Pylons) or from routes.
+- All Javascript support has been deprecated.  You can write link_to_remote()
+  yourself or use one of the third-party Javascript libraries.
+  from webhelpers.rails.asset_tag import javascript_path
+/home/szimpatikus/reddit/r2/r2/lib/translation.py:32: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  from md5 import md5
+/home/szimpatikus/reddit/r2/r2/lib/manager/tp_manager.py:22: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import pylons, sha
+reddit app a.v01.lanten.hu:19674 started d251ba7 at 2011-01-25 21:28:15.698275
+Warning: g.media_domain == g.domain. This may give untrusted content access to user cookies
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
+newcomments_q: 1 item 
