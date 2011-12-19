@@ -32,3 +32,9 @@ r2/myproduction.ini
 r2/r2.egg-info/**
 r2/r2/public/static/sprite.png
 *.old
+*.old*
+r2/r2/i18n/_tmp/**
+*.new
+solr
+scraper*
+tmp
