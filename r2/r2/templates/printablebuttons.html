@@ -234,6 +234,9 @@
   %if getattr(thing.thing, "use_big_modbuttons", False):
      ${big_modbuttons(thing.thing, "link")}
   %endif
+  <li>
+     ${plain_link(_("link"), thing.url, _sr_path = False)}
+  </li>
 
 </%def>
 
