@@ -137,7 +137,8 @@ class ToolbarController(RedditController):
         if link:
             # we were able to find it, let's send them to the
             # link-id-based URL so that their URL is reusable
-            return self.redirect(add_sr("/tb/" + link._id36))
+#            return self.redirect(add_sr("/tb/" + link._id36))
+	    return link._id36
 
         title = utils.domain(path)
         res = Frame(title = title, url = path)
