@@ -55,7 +55,7 @@ class PrintableButtons(Styled):
                         show_indict = show_indict,
                         show_distinguish = show_distinguish,
                         **kw)
-        
+
 class BanButtons(PrintableButtons):
     def __init__(self, thing,
                  show_delete = False, show_report = True):
@@ -86,8 +86,10 @@ class LinkButtons(PrintableButtons):
         # do we show the distinguish button? among other things,
         # we never want it to appear on link listings -- only
         # comments pages
-        show_distinguish = (is_author and thing.can_ban 
+        show_distinguish = (is_author and thing.can_ban
                             and getattr(thing, "expand_children", False))
+
+        self.url = thing.url
 
         kw = {}
         if thing.promoted is not None:
@@ -95,10 +97,10 @@ class LinkButtons(PrintableButtons):
             kw = dict(promo_url = promo_edit_url(thing),
                       promote_status = getattr(thing, "promote_status", 0),
                       user_is_sponsor = c.user_is_sponsor,
-                      traffic_url = promo_traffic_url(thing), 
+                      traffic_url = promo_traffic_url(thing),
                       is_author = thing.is_author)
 
-        PrintableButtons.__init__(self, 'linkbuttons', thing, 
+        PrintableButtons.__init__(self, 'linkbuttons', thing,
                                   # user existence and preferences
                                   is_loggedin = c.user_is_loggedin,
                                   new_window = c.user.pref_newwindow,
@@ -108,8 +110,8 @@ class LinkButtons(PrintableButtons):
                                   permalink  = thing.permalink,
                                   # button visibility
                                   saved = thing.saved,
-                                  editable = thing.editable, 
-                                  hidden = thing.hidden, 
+                                  editable = thing.editable,
+                                  hidden = thing.hidden,
                                   show_delete = show_delete,
                                   show_report = show_report and c.user_is_loggedin,
                                   show_indict = show_indict,
@@ -132,11 +134,11 @@ class CommentButtons(PrintableButtons):
         show_distinguish = is_author and thing.can_ban
 
         PrintableButtons.__init__(self, "commentbuttons", thing,
-                                  is_author = is_author, 
+                                  is_author = is_author,
                                   profilepage = c.profilepage,
                                   permalink = thing.permalink,
                                   deleted = thing.deleted,
-                                  parent_permalink = thing.parent_permalink, 
+                                  parent_permalink = thing.parent_permalink,
                                   can_reply = thing.can_reply,
                                   show_report = show_report,
                                   show_distinguish = show_distinguish,
@@ -174,7 +176,7 @@ def default_thing_wrapper(**params):
 
 # TODO: move this into lib somewhere?
 def wrap_links(links, wrapper = default_thing_wrapper(),
-               listing_cls = LinkListing, 
+               listing_cls = LinkListing,
                num = None, show_nums = False, nextprev = False,
                num_margin = None, mid_margin = None, **kw):
     links = tup(links)
