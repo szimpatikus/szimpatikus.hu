@@ -1,7 +1,0 @@
-#!/bin/sh
-umask 0027
-<<<<<<< HEAD
-exec setuidgid reddit multilog ./main
-=======
-exec setuidgid szimpatikus multilog ./main
->>>>>>> d83771a

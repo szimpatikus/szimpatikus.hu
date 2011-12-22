@@ -1,8 +1,0 @@
-#!/bin/sh
-
-exec 2>&1
-<<<<<<< HEAD
-/usr/bin/memcached  -m512 -p11211 -U11211 -C -c10000 -u reddit -Bauto
-=======
-/usr/bin/memcached  -m64 -p11211 -U11211 -C -c10000 -u szimpatikus -Bauto
->>>>>>> d83771a
